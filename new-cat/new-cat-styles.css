@@ -1,43 +1,48 @@
 /*1*/
-div {
+.border {
     border: 5px solid orange;
     border-radius: 10px;
+
 }
 .head-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin-left: 10px;
+}
+.head-block .block2{
     color: grey;
     background: yellowgreen;
     font-size: 80px;
-    width: 700px;
-    float: left;
-    min-height: 140px;
+   display: inline-block;
     text-align: center;
-    margin-left: 10px;
+    margin-bottom: 10px;
+    
+    
 }
     
 img {
-	width: 300px;
-        border: 5px solid orange;
-        border-radius: 10px;
-        float: left;
+    display: inline-block;
+    width: 20%;
+    border: 5px solid orange;
+    border-radius: 10px;
         	
 }
 .right-block {
+    display: inline-block;
     color: yellowgreen;
     background: gray;
     font-size: 50px;
-    width: 300px;
-    vertical-align: middle;
+    width: 20%;
+    vertical-align: top;
     text-align: center;
-    float: right;
-    min-height: 300px;
+    height: 270px;
+    margin-left: 10px;
     
     
 }
 .menu {
-    float: left;
-    margin: 10px;
-    width: 700px;
-    min-height: 140px;
+    min-height: 120px;
     background: gray;
     text-align: center;
     
@@ -48,11 +53,9 @@ li {
     border-radius: 5px;
     background: yellow;
     color: darkorange;
-    padding: 10px;
-    margin: 10px;
     text-transform: uppercase;
     
     
 }
-	
+
 
