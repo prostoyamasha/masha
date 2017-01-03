@@ -1,0 +1,12 @@
+/* own-styles */
+.own-h {
+    position: fixed !important;
+    padding: 100px 10px 10px !important;
+    
+}
+.own-btn {
+    width: 100% !important;
+}
+.img-own {
+    width: 100% !important;
+}  
