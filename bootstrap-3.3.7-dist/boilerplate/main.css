@@ -94,9 +94,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body {
+    background-color: #e1e7ed;
+}
 .btn {
-    width: 100%;
 }
 h1 {
     margin: 0;
@@ -110,15 +111,32 @@ h1 {
 }
 .own-btn {
     margin-top: 15px;
+    width: 100%;
 }
 .block-in {
-    border: 2px solid silver;
-    border-radius: 5px;
-    margin-left: 15px;
+   margin: 0;
+   border: 2px solid #fff;
+   border-radius: 5px; 
+   
+}  
+.block-left {
+    border: none;
 }
-
-
-
+.block-center {
+  background-color: #fff;  
+}
+.block-right {
+    background-color: #fff;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li:hover {
+    background: #d3d3d3;
+    text-decoration: none;
+}
 
 
 
