@@ -116,11 +116,14 @@ h1 {
 .block-in {
    margin: 0;
    border: 2px solid #fff;
-   border-radius: 5px; 
+   border-radius: 2px; 
    
 }  
 .block-left {
     border: none;
+}
+.own-icon {
+    padding-right: 15px !important;
 }
 .block-center {
   background-color: #fff;  
@@ -135,7 +138,13 @@ ul {
 }
 li:hover {
     background: #d3d3d3;
-    text-decoration: none;
+    text-decoration: none !important; 
+}
+.th1 {
+    color: graytext;
+}
+.own-h2 {
+    padding-left: 10px;
 }
 
 
