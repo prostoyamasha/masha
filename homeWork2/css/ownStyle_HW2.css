@@ -9,18 +9,20 @@
     margin-left: 12%;
     margin-right: 12%;
     min-height: 150px;
-    position: relative;
 }
 ul {
-    display: inline-block;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.header-links ul {
-    position: absolute;
-    top: 0;
-    right: 0;
+.header-links {
+    width: 100%;
+    text-align: right; 
+    margin: 0;
+    padding: 0;
+}
+.link:hover {
+    color: #99FF66;
 }
 li {
     display: inline;
@@ -38,10 +40,9 @@ li {
     border: none;
     margin-right: 25px;
 }
-img {
+.logo {
     width: 155px;
     height: 90px;
-    margin-top: 35px;
     margin-left: 50px;
 }
 .full-content {
@@ -55,18 +56,12 @@ img {
     min-height: 500px;
     margin-left: 12%;
     margin-right: 12%;
-    position: relative;
 }
-
-
-.left-column {
-    position: relative;
-    float: left;
-    width: 250px;
-    margin: 0 20px 0 0;
-    padding-left: 30px;
-    padding-top: 25px;
-    
+.main-content .left-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin: 25px;
 }
 .h-left {
     color: #8ac6d0;
@@ -80,14 +75,16 @@ img {
     margin: 0 15px 0 0;
 }
 img .cont-img {
-    width: 100%;
+    width: 86px;
+    height: 74px;
 }
 .block {
    margin-top: 30px;
 }
-.right-column {
-    width: 90%;
-    padding-left: 20px;
+.main-content .right-column {
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
     
 }
 li .menu-link {
@@ -96,6 +93,8 @@ li .menu-link {
     display: inline-block;
     padding: 25px 30px 10px 0;
 }
+.menu-link:hover {
+    color: #00ffff;
 h1 {
     color: #22223b;
 }
@@ -107,11 +106,7 @@ h2 {
 }
 .content2 p {
     text-indent: 10px;
-}
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+    text-align: justify;
 }
 .full-footer {
     background-color: #4a4e69;
@@ -124,19 +119,20 @@ h2 {
     margin-left: 12%;
     margin-right: 12%;
     min-height: 150px;
-    position: relative;
 }
-.left-foot {
-    color: #8ac6d0;
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    
+.main-footer .left-foot {
+    display: inline-block;
+    width: 47%;
+    padding-left: 25px;
+    padding-top: 115px;
+    color: #8ac6d0;   
 }
-.right-foot {
+.main-footer .right-foot {
+    display: inline-block;
+    width: 48%;
+    text-align: right;
+    padding-right: 25px;
+    padding-top: 115px;
     color: #140e0e;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-}
+    } 
 
