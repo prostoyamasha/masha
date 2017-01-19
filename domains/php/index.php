@@ -9,7 +9,7 @@
 $name = "Masha";
 $age = "29";
 
-echo "Меня зовут: $name";
+echo "Меня зовут: $name<br>";
 echo "Мне $age лет";
 ?>
 </body>
