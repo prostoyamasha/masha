@@ -78,9 +78,7 @@ echo strtolower($stringSix) . '<hr>';
  */
 
 $stringSeven = "some random text 'Hello, PHP progrаmmer!' some random text";
-echo substr($stringSeven, 18, 23) . '<br>';
-$findString = strpbrk($stringSeven, 'H');
-echo substr($findString, 0, 23). '<hr>';
+echo substr($stringSeven, 18, -18) . '<hr>';
 
 ?>
 </body>
