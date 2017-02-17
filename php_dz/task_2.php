@@ -78,7 +78,10 @@ echo strtolower($stringSix) . '<hr>';
  */
 
 $stringSeven = "some random text 'Hello, PHP progrаmmer!' some random text";
-echo substr($stringSeven, 18, -18) . '<hr>';
+$partCreativeString = substr($stringSeven, 0, strrpos($stringSeven, '\''));
+echo substr($partCreativeString, strrpos($partCreativeString, '\'')+1);
+
+
 
 ?>
 </body>
