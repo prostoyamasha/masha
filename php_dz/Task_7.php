@@ -96,19 +96,22 @@ class A {
         return $this->private;
     }
     public function overrideMethod() {
-        return 123 . '-' . $public;
+        return 123 . '-' . $this->public;
     }
 }
 class B extends A {
+    public $public = 30;
+    public $private = 40;
+    public $protected = 50;
     public function overrideMethod() {
-        return 456 . '-' . $public;
+        return 456 . '-' . $this->public;
     }
 }
 
 $sample1 = new B();
 $sample1->public = 15;
 $sample1->private = 400;
-//$sample1->protected = 3;
+$sample1->protected = 3;
 
 echo "<pre>";
 print_r ($sample1);
@@ -123,7 +126,7 @@ echo "</br>";
 //$sample1->privateGetProtected();
 echo $sample1->publicGetPrivate();
 echo "</br>";
-// $sample1->protectedGetPrivate(); 
+//$sample1->protectedGetPrivate(); 
 //$sample1->privateGetPrivate();
 echo $sample1->overrideMethod();
 echo "</br>";
