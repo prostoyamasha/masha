@@ -13,29 +13,28 @@ class Myself {
     public $name;
     
     public function getAge (){
-        echo "Мне $this->age лет. ";
+        return "Мне $this->age лет. ";
     }
     
     public function getName (){
-        echo "Меня зовут $this->name. ";
+        return "Меня зовут $this->name. ";
     }
     public function getAll (){  
-       $this->getName ();
-       $this->getAge ();
+        return $this->getName () . $this->getAge ();
     }
 
 }
 
-$myselfPerson1 = new Myself;
+$myselfPerson1 = new Myself();
 $myselfPerson1->age = 29;
 $myselfPerson1->name = 'Маша';
 
 echo "</br>";
-$myselfPerson1->getAge();
+echo $myselfPerson1->getAge();
 echo "</br>";
-$myselfPerson1->getName();
+echo $myselfPerson1->getName();
 echo "</br>";
-$myselfPerson1->getAll();
+echo $myselfPerson1->getAll();
 echo "<pre>";
 print_r ($myselfPerson1);
 
